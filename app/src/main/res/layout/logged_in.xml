@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#1E8301">
+
+  <TextView
+    android:id="@+id/emailLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="190dp"
+    android:layout_marginRight="190dp"
+    android:text="Email Address:"
+    android:textSize="24sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/loggedInText" />
+
+  <TextView
+    android:id="@+id/emailValue"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="32dp"
+    android:textSize="24sp"
+    app:layout_constraintStart_toEndOf="@+id/emailLabel"
+    app:layout_constraintTop_toBottomOf="@+id/loggedInText" />
+
+  <TextView
+    android:id="@+id/phoneLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="190dp"
+    android:layout_marginRight="190dp"
+    android:text="Phone Number:"
+    android:textSize="24sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/emailLabel" />
+
+  <TextView
+    android:id="@+id/phoneValue"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:textSize="24sp"
+    app:layout_constraintStart_toEndOf="@+id/phoneLabel"
+    app:layout_constraintTop_toBottomOf="@+id/emailValue" />
+
+  <TextView
+    android:id="@+id/addressLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="190dp"
+    android:layout_marginRight="190dp"
+    android:text="Address:"
+    android:textSize="24sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/phoneLabel" />
+
+  <TextView
+    android:id="@+id/addressValue"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:textSize="24sp"
+    app:layout_constraintStart_toEndOf="@+id/addressLabel"
+    app:layout_constraintTop_toBottomOf="@+id/phoneValue" />
+
+  <TextView
+    android:id="@+id/nameLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="190dp"
+    android:layout_marginRight="190dp"
+    android:text="Name:"
+    android:textSize="24sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/addressLabel" />
+
+  <TextView
+    android:id="@+id/nameValue"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:textSize="24sp"
+    app:layout_constraintStart_toEndOf="@+id/nameLabel"
+    app:layout_constraintTop_toBottomOf="@+id/addressValue" />
+
+  <TextView
+    android:id="@+id/loggedInText"
+    android:layout_width="238dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="86dp"
+    android:layout_marginLeft="86dp"
+    android:layout_marginTop="48dp"
+    android:layout_marginEnd="86dp"
+    android:layout_marginRight="86dp"
+    android:text="Welcome to the LTOA guest manager app"
+    android:textSize="30sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+    android:id="@+id/editProfileButton"
+    android:layout_width="152dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="130dp"
+    android:layout_marginLeft="130dp"
+    android:layout_marginTop="32dp"
+    android:text="Edit Profile"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/nameLabel" />
+
+  <Button
+    android:id="@+id/createGuestButton"
+    android:layout_width="152dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="130dp"
+    android:layout_marginLeft="130dp"
+    android:text="Create Guest"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/viewGuestsButton" />
+
+  <Button
+    android:id="@+id/removeGuestButton"
+    android:layout_width="152dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="130dp"
+    android:layout_marginLeft="130dp"
+    android:text="Remove Guest"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/createGuestButton" />
+
+  <Button
+    android:id="@+id/viewGuestsButton"
+    android:layout_width="152dp"
+    android:layout_height="52dp"
+    android:layout_marginStart="130dp"
+    android:layout_marginLeft="130dp"
+    android:text="View Guests"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editProfileButton" />
+
+  <Button
+    android:id="@+id/logoutButton"
+    android:layout_width="152dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="130dp"
+    android:layout_marginLeft="130dp"
+    android:text="Logout"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/removeGuestButton" />
+</android.support.constraint.ConstraintLayout>
